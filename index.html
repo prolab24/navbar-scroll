@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <!-- linking fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Special+Elite&display=swap" rel="stylesheet">
+    <!-- linking css -->
+    <link rel="stylesheet" href="style/nav.css">
+</head>
+<body>
+    <div>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="#">PROLAB</a></h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="banner"></section>
+    <script>
+        window.addEventListener("scroll",function(){
+            var nav = document.querySelector("div");
+            nav.classList.toggle("stroll",window.scrollY > 0);
+        })
+    </script>
+</body>
+</html>
